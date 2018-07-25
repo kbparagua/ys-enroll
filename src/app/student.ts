@@ -1,7 +1,6 @@
-export class Registration {
+export class Student {
   email: string;
   password: string;
-  passwordConfirmation: string;
   firstName: string;
   middleName: string;
   lastName: string;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router  } from '@angular/router';
+
 import { StudentService } from '../student.service';
 import { Student } from '../student';
 
@@ -13,7 +15,8 @@ export class RegistrationComponent implements OnInit {
   student: Student;
 
   constructor(
-    private studentService: StudentService
+    private studentService: StudentService,
+    private router: Router
   ){}
 
   ngOnInit(){
@@ -22,5 +25,6 @@ export class RegistrationComponent implements OnInit {
 
   submit(): void {
     this.studentService.add(this.student);
+    this.router.navigate(['/login']);
   }
 }

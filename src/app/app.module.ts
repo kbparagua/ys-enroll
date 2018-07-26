@@ -8,13 +8,15 @@ import { RegistrationComponent } from './registration/registration.component';
 import { StudentService } from './student.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { LoginComponent } from './login/login.component';
+import { StudentListComponent } from './student-list/student-list.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegistrationComponent,
-    LoginComponent
+    LoginComponent,
+    StudentListComponent
   ],
   imports: [
     BrowserModule,
